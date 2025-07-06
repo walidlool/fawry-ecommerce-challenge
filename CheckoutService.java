@@ -40,8 +40,7 @@ public class CheckoutService {
 
         System.out.println("** Checkout receipt **");
         for (Map.Entry<Product, Integer> entry : cart.getItems().entrySet()) {
-            System.out.printf("%dx %s	%.0f
-", entry.getValue(), entry.getKey().name, entry.getKey().price * entry.getValue());
+            System.out.printf("%dx %s	%.0f", entry.getValue(), entry.getKey().name, entry.getKey().price * entry.getValue());
         }
         System.out.println("----------------------");
         System.out.println("Subtotal	" + subtotal);
